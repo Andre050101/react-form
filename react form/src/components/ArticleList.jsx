@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./ArticleList.module.css"
 
 const ArticleList = ({ articles, onRemoveArticle }) => {
     if (articles.length === 0) {
-        return <p>No articles yet</p>;
+        return <p className={styles.noArticles}>No articles yet</p>;
     }
 
     return (
@@ -11,10 +12,10 @@ const ArticleList = ({ articles, onRemoveArticle }) => {
                 <li key={article.id}>
                     <div>
                         <h3>{article.title}</h3>
-                        <p>Author: {article.author}</p>
-                        <p>Status: {article.status}</p>
+                        <p><strong>Author:</strong> {article.author}</p>
+                        <p><strong>Status:</strong> {article.status}</p>
                     </div>
-                    <button onClick={() => onRemoveArticle(article.id)}>Delete</button>
+                    <button className={styles.btn} onClick={() => onRemoveArticle(article.id)}>Delete</button>
                 </li>
             ))}
         </ul>

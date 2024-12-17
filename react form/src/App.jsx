@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h1>Handle Blog's Articles</h1>
       <Form onAddArticle={addArticle} />
       <ArticleList articles={articles} onRemoveArticle={removeArticle} />
