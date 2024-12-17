@@ -8,6 +8,22 @@ label {
     font-weight: bold;
 }
 
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 10px;
+}
+
+select {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 10px;
+}
+
 button {
     width: 90px;
     height: 30px;
