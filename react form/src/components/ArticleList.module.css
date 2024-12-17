@@ -9,6 +9,10 @@ li div {
     gap: 0.5rem;
 }
 
+li div h3 {
+    text-transform: uppercase;
+}
+
 .btn {
     margin-top: 5px;
     background-color: rgb(141, 14, 14);
